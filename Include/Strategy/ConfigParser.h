@@ -12,7 +12,7 @@ struct ParsedConfig {
     std::unique_ptr<IRateLimitStrategy> strategy;
 };
 
-/
+
 class ConfigParser {
 public:
     static ParsedConfig parse(long limit, long windowOrRefillMs, const std::string& strategyName);
